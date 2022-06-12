@@ -1,0 +1,141 @@
+{{#almondbpageenabled}}
+{{#almondbpagecsslink}}
+    {{{almondbpagecsslink}}}
+{{/almondbpagecsslink}}
+<style>
+    {{^almondbpagenavbar}}
+        .navbar{
+            display: none;
+        }
+        #nav-drawer{
+            display: none;
+        }    
+        body.drawer-open-left {
+            margin-left: 0px;
+        } 
+    {{/almondbpagenavbar}}
+    {{^almondbpageheader}}
+        #page-header {
+            display: none;
+        }
+        #page-footer-frontpage {
+            display: none;
+        }
+    {{/almondbpageheader}}
+    {{^almondbpagefooter}}
+        #page-footer {
+            display: none;
+        } 
+    {{/almondbpagefooter}}
+    {{#backgroundsimple}}
+        .backgroundsimple {
+            position: relative;
+        }
+        .backgroundsimple:before {    
+            content: "";
+            background: url('{{almondbpageimg}}') no-repeat center center fixed ;
+            background-size: cover;
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            opacity: 0.7;
+        }
+    {{/backgroundsimple}}
+    #region-main {
+        border: 0px solid rgba(0, 0, 0, 0.125);
+        padding: 0px;
+    } 
+    img {
+        border-radius: 3px;
+    }
+    #page-header .card {
+        background-color: #f8f9fa;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        border-radius: 0;
+    }
+    #page-header .pt-3 {
+        padding-top: 0rem !important;
+    }
+    #page-header .col-12 {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .bd-callout {
+        padding: 1.25rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.25rem;
+        border: 1px solid #eee;
+        border-left-width: .25rem;
+        border-radius: .25rem;
+    }
+    .bd-callout-info {
+        border-left-color: #5bc0de;
+    }
+    {{almondbpagecss}}
+</style>  
+{{#almondbpageadvanced}}
+    <div id="almondbpage-advanced">
+        {{{almondbpagecap}}}
+    </div>  
+    {{#almondbpageimglink}}
+        <img id="imgnewlink" src="{{almondbpageimglink}}" width="1" height="1" style="display:none;">
+    <script src="js/imglink.js"></script>
+    {{/almondbpageimglink}}
+{{/almondbpageadvanced}} 
+{{#almondbpagesimple}}
+    {{#backgroundsimple}}
+        <div class="container pt-3">
+            <div class="backgroundsimple">
+                {{{almondbpagecap}}}
+            </div>
+        </div>    
+    {{/backgroundsimple}}
+    {{#topsimple}}
+    <div class="container pt-3">
+        <div style="text-align:center">
+          <img src="{{almondbpageimg}}" width=100% >
+        </div> 
+        <div>
+            {{{almondbpagecap}}}
+        </div>
+    </div>    
+    {{/topsimple}}
+    {{#fulltopsimple}}
+    
+        <div style="text-align:center">
+          <img src="{{almondbpageimg}}" width=100% >
+        </div> 
+    <div class="container pt-3">    
+        <div>
+            {{{almondbpagecap}}}
+        </div>
+    </div>    
+    {{/fulltopsimple}}
+    {{#leftsimple}}
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <img src="{{almondbpageimg}}" width="100%">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 leftsimple">
+                {{{almondbpagecap}}}
+            </div>
+        </div> 
+    </div>       
+    {{/leftsimple}}
+    {{#rightsimple}}
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-lg-6 rightsimple">
+                {{{almondbpagecap}}}
+            </div>
+            <div class="col-lg-6">
+                <img src="{{almondbpageimg}}" width="100%" >
+            </div>
+        </div>
+    </div>    
+    {{/rightsimple}}
+{{/almondbpagesimple}}
+{{/almondbpageenabled}}
