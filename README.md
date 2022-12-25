@@ -1,1 +1,1 @@
-This plugin only works with almondb theme. Put the almondbpage folder under the moodle/local directory or <br> zip the almondbpage folder you downloaded and <br> install it from the moodle admin panel plugins tab.
+This plugin only works with almondb theme. <br> Open the "moodle-local_almondbpage.zip" file you have downloaded, and the "almondbpage" is the main plugin file in it. <br> Put the almondbpage folder under the moodle/local directory or <br> zip the almondbpage folder you downloaded and <br> install it from the moodle admin panel plugins tab.
